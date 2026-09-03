@@ -1,0 +1,212 @@
+<div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Esquina</title>
+  <link rel="stylesheet" href="style.css">
+</head> 
+<hero class="grilla">
+    
+    <nav>
+      <a href="#sobre-nosotros"> Sobre nosotros </a>
+    </nav>  
+    <nav>
+      <a href="#productos"> Productos </a>
+    </nav>  
+    <img class="logo" src="img/java.png">
+    
+    <nav>
+      <a href="#productos"> Productos </a>
+    </nav>  
+    <nav>
+      <a href="#productos"> Productos </a>
+    </nav>  
+</hero>
+<body>
+
+  <header>
+    <h1>La Esquina</h1>
+  </header>
+
+  <section id="sobre-nosotros" class="hero">
+    <h2>Sobre nosotros</h2>
+    <p class="sobre-mi"> Todo comenzó con un sueño sencillo: crear un lugar donde las personas pudieran sentirse como en casa.
+      <br>Durante años, imaginamos una cafetería llena de aromas, charlas, risas y momentos compartidos. Un lugar donde un café pudiera acompañar una mañana difícil, donde una medialuna pudiera endulzar un día complicado y donde cada persona pudiera encontrar un pequeño momento de tranquilidad.
+      <br>Hoy, ese sueño finalmente abre sus puertas. 
+      <br>Cada taza que servimos, cada cosa que preparamos y cada detalle de nuestro espacio está hecho con cariño, porque creemos que una cafetería no es solamente un lugar para tomar café. Es un lugar donde se crean recuerdos.
+      <br>Queremos que cuando cruces nuestra puerta sientas que estás llegando a un lugar especial. Un lugar para compartir, descansar, celebrar y disfrutar de las pequeñas cosas.
+      <p class="bienvenida">Bienvenidos a nuestra cafetería. El sueño que comenzó con una idea, hoy queremos compartirlo con ustedes.</p>
+    </p>
+    <section class="carrusel" aria-label="Imágenes de nuestra cafetería">
+      <div class="carrusel__ventana">
+        <article class="carrusel__slide" id="cafe-1">
+          <img src="img/Cafe1.jpeg" alt="Interior cálido de la cafetería">
+          <a class="carrusel__boton carrusel__boton--anterior" href="#cafe-3" aria-label="Imagen anterior">&#10094;</a>
+          <a class="carrusel__boton carrusel__boton--siguiente" href="#cafe-2" aria-label="Imagen siguiente">&#10095;</a>
+        </article>
+        <article class="carrusel__slide" id="cafe-2">
+          <img src="img/Cafe2.jpeg" alt="Taza de café sobre una mesa">
+          <a class="carrusel__boton carrusel__boton--anterior" href="#cafe-1" aria-label="Imagen anterior">&#10094;</a>
+          <a class="carrusel__boton carrusel__boton--siguiente" href="#cafe-3" aria-label="Imagen siguiente">&#10095;</a>
+        </article>
+        <article class="carrusel__slide" id="cafe-3">
+          <img src="img/Cafe3.jpeg" alt="Pastelería artesanal de la cafetería">
+          <a class="carrusel__boton carrusel__boton--anterior" href="#cafe-2" aria-label="Imagen anterior">&#10094;</a>
+          <a class="carrusel__boton carrusel__boton--siguiente" href="#cafe-1" aria-label="Imagen siguiente">&#10095;</a>
+        </article>
+      </div>
+      <div class="carrusel__indicadores" aria-hidden="true">
+        <a href="#cafe-1"></a>
+        <a href="#cafe-2"></a>
+        <a href="#cafe-3"></a>
+      </div>
+    </section>
+  </section>
+<hr>
+  <main>
+    <section id="productos" class="productos">
+      <h2>Productos</h2>
+      <div class="grid-productos">
+        <div class="producto">
+          <h3>Cafetería</h3>
+          <p>Café espresso
+            <br>Café doble
+            <br>Café cortado
+            <br>Café con leche
+            <br>CappuccinoLatte
+            <br>Latte de vainilla
+            <br>Latte de caramelo
+            <br>Mocaccino
+            <br>Café irlandés
+            <br>Café con dulce de leche
+            <br>Chocolate caliente
+            <br>Té negro
+            <br>Té verde
+            <br>Té de frutos rojos
+            <br>Té de manzanilla</p>
+        </div>
+        <div class="producto">
+          <h3>Panadería</h3>
+          <p>Medialuna de manteca
+            <br>Medialuna de grasa
+            <br>Croissant
+            <br>Croissant de chocolate
+            <br>Facturas con dulce de leche
+            <br>Facturas con crema pastelera
+            <br>Bolas de fraile
+            <br>Berlinesas
+            <br>Palmeritas
+            <br>Tortas negras
+            <br>Chipa
+            <br>Pan de campo
+            <br>Pan integral
+            <br>Pan de queso
+            <br>Budín de vainilla
+            <br>Budín de limón
+            <br>Budín de chocolate</p>
+        </div>
+        <div class="producto">
+          <h3>Tortas y dulces</h3>
+          <p>Cheesecake
+            <br>Lemon pie
+            <br>Brownie
+            <br>Brownie con nueces
+            <br>Carrot cake
+            <br>Torta de chocolate
+            <br>Torta de dulce de leche
+            <br>Torta de frutos rojos
+            <br>Torta de Oreo
+            <br>Tiramisú
+            <br>Chocotorta
+            <br>Flan casero
+            <br>Panna cotta
+            <br>Alfajores
+            <br>Cookies con chips
+            <br>Cookies de chocolate
+            <br>Muffins de vainilla
+            <br>Muffins de chocolate</p>
+        </div>
+        <div class="producto">
+          <h3>Salados</h3>
+          <p>Tostado de jamón y queso
+            <br>Tostado de pollo
+            <br>Sándwich de jamón y queso
+            <br>Sándwich de pollo
+            <br>Sándwich de atún
+            <br>Sándwich de bondiola
+            <br>Sándwich de verduras
+            <br>Croissant de jamón y queso
+            <br>Croissant de pollo
+            <br>Empanada de carne
+            <br>Empanada de pollo
+            <br>Empanada de jamón y queso
+            <br>Tarta de verduras
+            <br>Tarta de pollo
+            <br>Tarta de jamón y queso</p>
+        </div>
+        <div class="producto">
+          <h3>Desayunos y meriendas</h3>
+          <p>Desayuno clásico
+          <br>Desayuno completo
+          <br>Desayuno para dos
+          <br>Merienda para dos
+          <br>Tostadas con manteca
+          <br>Tostadas con mermelada
+          <br>Tostadas con dulce de leche
+          <br>Tostadas con palta
+          <br>Yogur con frutas
+          <br>Yogur con granola
+          <br>Panqueques con dulce de leche
+          <br>Panqueques con frutas
+          <br>Waffles con chocolate
+          <br>Waffles con dulce de leche
+          <br>Waffles con frutas</p>
+        </div>
+        <div class="producto">
+          <h3>Bebidas</h3>
+          <p>Limonada clásica
+          <br>Limonada con menta
+          <br>Limonada con frutos rojos
+          <br>Jugo de naranja
+          <br>Jugo de manzana
+          <br>Jugo de frutilla
+          <br>Licuado de banana
+          <br>Licuado de frutilla
+          <br>Licuado de durazno
+          <br>Milkshake de chocolate
+          <br>Milkshake de frutilla
+          <br>Milkshake de vainilla
+          <br>Café helado
+          <br>Frappuccino
+          <br>Té helado
+          <br>Agua saborizada</p>
+        </div>
+              
+        </div>
+      </div>
+    </section>
+  <hr>
+    <section id="info" class="info">
+      <div class="info-texto">
+        <h2>Sobre nosotros</h2>
+        <p>Contá algo del negocio: historia, horarios, ubicación.</p>
+      </div>
+      <div class="info-dato">
+        <h3>Horarios</h3>
+        <p>Lun a sáb de 10 a 20 hs</p>
+      </div>
+    </section>
+  
+  </main>
+
+  <footer id="footer">
+    <p>Nombre del negocio</p>
+    <p>Instagram · WhatsApp · Ubicación</p>
+  </footer>
+
+</body>
+</html>
+
+</div>

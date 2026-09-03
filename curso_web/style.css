@@ -1,0 +1,137 @@
+
+.grilla {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    background-color: #8E8358; 
+    border-radius: 15px ;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 60%;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.bienvenida {
+ font-weight: bold
+}
+.sobre-mi { font-style:italic}
+
+.carrusel {
+    width: min(100% - 2rem, 900px);
+    margin: 2rem auto;
+}
+
+.carrusel__ventana {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+}
+
+.carrusel__ventana::-webkit-scrollbar {
+    display: none;
+}
+
+.carrusel__slide {
+    position: relative;
+    min-width: 0;
+    scroll-snap-align: center;
+}
+
+.carrusel__slide img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+.carrusel__boton {
+    position: absolute;
+    top: 50%;
+    display: grid;
+    place-items: center;
+    width: 42px;
+    height: 42px;
+    color: #fff;
+    background-color: rgb(51 45 32 / 75%);
+    border-radius: 50%;
+    font-size: 1.5rem;
+    line-height: 1;
+    text-decoration: none;
+    transform: translateY(-50%);
+}
+
+.carrusel__boton:hover,
+.carrusel__boton:focus-visible {
+    background-color: #332d20;
+}
+
+.carrusel__boton--anterior {
+    left: 1rem;
+}
+
+.carrusel__boton--siguiente {
+    right: 1rem;
+}
+
+.carrusel__indicadores {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 0.9rem;
+}
+
+.carrusel__indicadores a {
+    width: 9px;
+    height: 9px;
+    background-color: #8E8358;
+    border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+    .grilla {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .carrusel {
+        width: calc(100% - 1rem);
+    }
+
+    .carrusel__boton {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    justify-items: center;
+    background-color: #EDDEA4 ;
+    width: calc(100% - 2rem);
+    max-width: 1000px;
+    margin-inline: auto;
+    padding: 15px;
+    box-sizing: border-box;
+}
